@@ -1,0 +1,111 @@
+import os
+os.system("cls")
+
+# 1
+# class Talaba:
+#     def __init__(self, name, surename, grade):
+#         self.ism = name
+#         self.familiya = surename 
+#         self.baho = grade
+
+# talaba1 = Talaba("Azizbek", 'Jalilov', 3)
+# talaba2 = Talaba("Sarvar", "Eshmatov", 5)
+# talaba2 = Talaba("Sarvar", "Eshmatov", 4)
+# lst = [talaba1, talaba2]
+# max = -1
+# ism = 'kimdir'
+# for i in lst:
+#     if i.baho > max:
+#         max = i.baho
+#         ism = i.ism
+# print(ism)
+
+# 2
+# class Built:
+#     def __init__(self, height, color):
+#         self.height = height
+#         self.color = color
+
+# built1 = Built(40, "Blue")
+# built2 = Built(60, "Red")
+# built3 = Built(240, "Green")
+# built4 = Built(40, "white")
+# built5 = Built(20, "Cyan")
+# lst = [built1, built2, built3, built4, built5]
+# for i in lst:
+#     if i.height > 50:
+#         print(i.color)
+
+# 3 
+# class Notebook:
+#     def __init__(self, farm, model, CPU, DDR, price):
+#         self.farm = farm
+#         self.model = model
+#         self.CPU = CPU
+#         self.DDR = DDR
+#         self.price = price
+
+# class info_notebook(Notebook):
+#     def ntk(self):
+#         return f"farm={self.farm}, model={self.model}, CPU={self.CPU}, DDR={self.DDR}, price={self.price}"
+
+# notebook = info_notebook("Acer", "A315-34-C3PR", "Intel(R) Celeron(R) N4020 CPU @ 1.10GHz   1.10 GHz", "DDR4", 4_000_000)
+# print(notebook.ntk())
+
+# 4
+# class my_list:
+#     def __init__(self, user):
+#         self.user = user
+
+# class delete_last_item:
+#     def func(user: list) -> list:
+#         user.pop(len(user) - 1)
+#         return user
+
+# user = list(map(str, input("Enter sentence: ").split()))
+# lst = my_list(user)
+# print(delete_last_item.func(lst.user))
+
+# 5
+# class my_list:
+#     def __init__(self, user):
+#         self.user = user
+
+# class delete_last_item:
+#     def func(user: list) -> list:
+#         user.pop(0)
+#         return user
+
+# user = list(map(str, input("Enter sentence: ").split()))
+# lst = my_list(user)
+# print(delete_last_item.func(lst.user))
+
+# 6
+# class Car:
+#     def __init__(self, brand):
+#         self.brand = brand
+
+# class brand_exists:
+#     def func(brand_list: list, check: str) -> bool:
+#         for i in range(len(brand_list)):
+#             brand_list[i] = brand_list[i].lower()
+#         if check.lower() in brand_list:
+#             return True
+#         else:
+#             return False
+
+# brand = list(map(str, input("Enter car brands: ").split()))
+# check = input("Enter brand: ")
+# car = Car(brand)
+# print(brand_exists.func(car.brand, check))
+
+# 7
+# class update_string:
+#     def update(self, user: str) -> str:
+#         return  user[0].upper() + user[1:-1] + user[-1].upper()
+
+# class get_string:
+#     def func(self, user: str) -> str:
+#         return user
+
+# print(update_string().update(get_string().func(input("Enter word: "))))
